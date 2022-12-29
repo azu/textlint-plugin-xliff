@@ -1,0 +1,17 @@
+{
+  "fmt": {
+    "files": {
+      "include": [
+        "src",
+        "deno.json"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
+    },
+    "options": {
+      "useTabs": false,
+      "lineWidth": 160
+    }
+  }
+}
