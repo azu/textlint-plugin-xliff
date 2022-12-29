@@ -1,9 +1,4 @@
-import type {
-  TextNodeRange,
-  TxtNode,
-  TxtNodeLineLocation,
-  TxtParentNode,
-} from "@textlint/ast-node-types";
+import type { TextNodeRange, TxtNode, TxtNodeLineLocation, TxtParentNode } from "@textlint/ast-node-types";
 import { ASTNodeTypes } from "@textlint/ast-node-types";
 import type { Position } from "unist";
 
