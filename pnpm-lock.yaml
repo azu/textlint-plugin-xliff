@@ -2,11 +2,11 @@ lockfileVersion: 5.4
 
 specifiers:
   '@jest/globals': ^29.3.1
-  '@textlint/ast-node-types': ^12.2.2
-  '@textlint/kernel': ^12.2.3
-  '@textlint/types': ^12.2.3
+  '@textlint/ast-node-types': ^12.3.0
+  '@textlint/kernel': ^12.3.0
+  '@textlint/types': ^12.3.0
   '@tsconfig/node-lts-strictest': ^18.12.1
-  '@types/jest': ^29.2.4
+  '@types/jest': ^29.2.5
   '@types/node': ^18.11.18
   '@types/unist': ^2.0.6
   env-cmd: ^10.1.0
@@ -26,7 +26,7 @@ specifiers:
   xast-util-to-xml: ^3.0.0
 
 dependencies:
-  '@textlint/ast-node-types': 12.2.2
+  '@textlint/ast-node-types': 12.3.0
   unist-util-map: 3.1.2
   vfile-location: 4.0.1
   xast-util-from-xml: 2.0.1
@@ -34,10 +34,10 @@ dependencies:
 
 devDependencies:
   '@jest/globals': 29.3.1
-  '@textlint/kernel': 12.2.3
-  '@textlint/types': 12.2.3
+  '@textlint/kernel': 12.3.0
+  '@textlint/types': 12.3.0
   '@tsconfig/node-lts-strictest': 18.12.1
-  '@types/jest': 29.2.4
+  '@types/jest': 29.2.5
   '@types/node': 18.11.18
   '@types/unist': 2.0.6
   env-cmd: 10.1.0
@@ -637,7 +637,7 @@ packages:
       '@types/istanbul-lib-coverage': 2.0.4
       '@types/istanbul-reports': 3.0.1
       '@types/node': 18.11.18
-      '@types/yargs': 17.0.17
+      '@types/yargs': 17.0.18
       chalk: 4.1.2
     dev: true
 
@@ -702,38 +702,38 @@ packages:
       '@sinonjs/commons': 1.8.6
     dev: true
 
-  /@textlint/ast-node-types/12.2.2:
-    resolution: {integrity: sha512-VQAXUSGdmEajHXrMxeM9ZTS8UBJSVB0ghJFHpFfqYKlcDsjIqClSmTprY6521HoCoSLoUIGBxTC3jQyUMJFIWw==}
+  /@textlint/ast-node-types/12.3.0:
+    resolution: {integrity: sha512-ke5hlKy/xZ/vQt6j+h4k9GradJPDsV3FKsUqWpCpF/X8qWCU2zM4e1SMUAFjoUcLuF9in+eXIQ71Qm/AdjjkZQ==}
 
-  /@textlint/ast-tester/12.2.3:
-    resolution: {integrity: sha512-+yLj38mgrluEFXD8rmwmMo+2lQbrx3v5aQBkHUZdddAq/1LJu4qqctikUzAeVRJZPWKsdLrN3vaLT2rp4h8KYg==}
+  /@textlint/ast-tester/12.3.0:
+    resolution: {integrity: sha512-f135pLEv/6epjRNlSTpxHX/3lutzB+l1GCHjVlm+PRCWEunKBvcZxyBCf1mp00vKNQdOpLnSPFDHIa/KgsZ/nQ==}
     dependencies:
-      '@textlint/ast-node-types': 12.2.2
+      '@textlint/ast-node-types': 12.3.0
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@textlint/ast-traverse/12.2.3:
-    resolution: {integrity: sha512-sv06SITci07P1LQQxH1hSv04xoHz2OC+WlppTuMoOFR20kRBMyOs7Ssvor0NdNmspDXG8qvdCBxh9rFmdNSJyQ==}
+  /@textlint/ast-traverse/12.3.0:
+    resolution: {integrity: sha512-WkDOgs7LJNf9kq7yGIi10FuBkW0wpbgMR6unLegRBwT+xN7JxynFnlLVHUfyJs3S0VPYFHX6Dvybg4As7iM4Tw==}
     dependencies:
-      '@textlint/ast-node-types': 12.2.2
+      '@textlint/ast-node-types': 12.3.0
     dev: true
 
-  /@textlint/feature-flag/12.2.3:
-    resolution: {integrity: sha512-KrKc8dY3iept6Hv/dSKwaYAkjFdYbaithXAnRpp0O4fkXPdv6HYu7iGtM2kA4nkVLdjrzAnPNKA9tmP3EE0qNg==}
+  /@textlint/feature-flag/12.3.0:
+    resolution: {integrity: sha512-7WgC2d6gk+aeQLPz6M24Ngt4hsZkUL701CjP9R9P2RnLFMVOxwJ7YzpxcGTrlK5pmMNZ06xfbHpBd4rE0d567Q==}
     dev: true
 
-  /@textlint/kernel/12.2.3:
-    resolution: {integrity: sha512-O0oifeiotA7ZEpWGssGPHCpIDUcsUfkmNTypk6j0l5m+VL+X3Zz0z/F+i02O9eMcizzLFcnC8oMoLxeYNhJCKg==}
+  /@textlint/kernel/12.3.0:
+    resolution: {integrity: sha512-ENNaAeIc3DkuIIA/igkEwu9QIUv6YiLpsZu0lh1+11gdIPbyqwZoF+OO35VColZNFpcIYjeODjZukXAUtKZNCA==}
     dependencies:
-      '@textlint/ast-node-types': 12.2.2
-      '@textlint/ast-tester': 12.2.3
-      '@textlint/ast-traverse': 12.2.3
-      '@textlint/feature-flag': 12.2.3
-      '@textlint/source-code-fixer': 12.2.3
-      '@textlint/types': 12.2.3
-      '@textlint/utils': 12.2.3
+      '@textlint/ast-node-types': 12.3.0
+      '@textlint/ast-tester': 12.3.0
+      '@textlint/ast-traverse': 12.3.0
+      '@textlint/feature-flag': 12.3.0
+      '@textlint/source-code-fixer': 12.3.0
+      '@textlint/types': 12.3.0
+      '@textlint/utils': 12.3.0
       debug: 4.3.4
       deep-equal: 1.1.1
       structured-source: 3.0.2
@@ -741,23 +741,23 @@ packages:
       - supports-color
     dev: true
 
-  /@textlint/source-code-fixer/12.2.3:
-    resolution: {integrity: sha512-uXGpD3hcqGNVL8yUpZci0+DDXUi81/MlMOzK6OWLDYBXdIZvJ0ADXQ/oUkljWIdmzMcME1AXkHvC5EGL0td2Sg==}
+  /@textlint/source-code-fixer/12.3.0:
+    resolution: {integrity: sha512-ma5HN8BbmeE6UnIiVWRdMigwqGHGG9R+kTBJBro5tsCyaktGPArnbg1EynJeBVz/C7vMll4RXcuOFyvEtaMsOw==}
     dependencies:
-      '@textlint/types': 12.2.3
+      '@textlint/types': 12.3.0
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@textlint/types/12.2.3:
-    resolution: {integrity: sha512-7948CPxVsZu99zlIWDyxwT6MI33WpwKwVSD9jk0e5M8VcdxMUnecVq6D40h8LAtfsT5V8NTJqFxKFT6+LpiBvg==}
+  /@textlint/types/12.3.0:
+    resolution: {integrity: sha512-6IcKqGJyIISaH4JqkUEsG+3FIg0CVSz1iHFfwMA16YgRuKtSDuySPyo3LfpcQ3dqUeonr29yWgfi2f1QM8SCDw==}
     dependencies:
-      '@textlint/ast-node-types': 12.2.2
+      '@textlint/ast-node-types': 12.3.0
     dev: true
 
-  /@textlint/utils/12.2.3:
-    resolution: {integrity: sha512-1dEihBt9A+DcQ/4IZC3c3TFktb/6p61m6WItyqEYU4h9UjUOH4l1sEKqorEOkJ/DIlA9VQcJT/LF5CCFYOKkcw==}
+  /@textlint/utils/12.3.0:
+    resolution: {integrity: sha512-O9WuQqN+hEs1tVWSd3HQYCPQZyKTW/JjKoaMxYsKtvHwu592094iONppyBFwKpmlQCU/woelvbIRQruDRggVVQ==}
     dev: true
 
   /@tsconfig/node-lts-strictest/18.12.1:
@@ -831,8 +831,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.2.4:
-    resolution: {integrity: sha512-PipFB04k2qTRPePduVLTRiPzQfvMeLwUN3Z21hsAKaB/W9IIzgB2pizCL466ftJlcyZqnHoC9ZHpxLGl3fS86A==}
+  /@types/jest/29.2.5:
+    resolution: {integrity: sha512-H2cSxkKgVmqNHXP7TC2L/WUorrZu8ZigyRywfVzv6EyBlxj39n4C00hjXYQWsbwqgElaj/CiAeSRmk5GoaKTgw==}
     dependencies:
       expect: 29.3.1
       pretty-format: 29.3.1
@@ -874,8 +874,8 @@ packages:
       '@types/yargs-parser': 21.0.0
     dev: true
 
-  /@types/yargs/17.0.17:
-    resolution: {integrity: sha512-72bWxFKTK6uwWJAVT+3rF6Jo6RTojiJ27FQo8Rf60AL+VZbzoVPnMFhKsUnbjR8A3BTCYQ7Mv3hnl8T0A+CX9g==}
+  /@types/yargs/17.0.18:
+    resolution: {integrity: sha512-eIJR1UER6ur3EpKM3d+2Pgd+ET+k6Kn9B4ZItX0oPjjVI5PrfaRjKyLT5UYendDpLuoiJMNJvovLQbEXqhsPaw==}
     dependencies:
       '@types/yargs-parser': 21.0.0
     dev: true
@@ -2434,7 +2434,7 @@ packages:
       object-inspect: 1.12.2
       pidtree: 0.6.0
       string-argv: 0.3.1
-      yaml: 2.2.0
+      yaml: 2.2.1
     transitivePeerDependencies:
       - enquirer
       - supports-color
@@ -3508,8 +3508,8 @@ packages:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
     dev: true
 
-  /yaml/2.2.0:
-    resolution: {integrity: sha512-auf7Gi6QwO7HW//GA9seGvTXVGWl1CM/ADWh1+RxtXr6XOxnT65ovDl9fTi4e0monEyJxCHqDpF6QnFDXmJE4g==}
+  /yaml/2.2.1:
+    resolution: {integrity: sha512-e0WHiYql7+9wr4cWMx3TVQrNwejKaEe7/rHNmQmqRjazfOP5W8PB6Jpebb5o6fIapbz9o9+2ipcaTM2ZwDI6lw==}
     engines: {node: '>= 14'}
     dev: true
 

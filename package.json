@@ -31,7 +31,7 @@
     "tsc": "tsc -p ./tsconfig.build.json"
   },
   "dependencies": {
-    "@textlint/ast-node-types": "^12.2.2",
+    "@textlint/ast-node-types": "^12.3.0",
     "unist-util-map": "^3.1.2",
     "vfile-location": "^4.0.1",
     "xast-util-from-xml": "^2.0.1",
@@ -39,10 +39,10 @@
   },
   "devDependencies": {
     "@jest/globals": "^29.3.1",
-    "@textlint/kernel": "^12.2.3",
-    "@textlint/types": "^12.2.3",
+    "@textlint/kernel": "^12.3.0",
+    "@textlint/types": "^12.3.0",
     "@tsconfig/node-lts-strictest": "^18.12.1",
-    "@types/jest": "^29.2.4",
+    "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
     "@types/unist": "^2.0.6",
     "env-cmd": "^10.1.0",
