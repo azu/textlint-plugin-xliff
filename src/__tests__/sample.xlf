@@ -4,7 +4,7 @@
     <body>
       <trans-unit xml:space="preserve" id="2">
         <source>Hello, world!</source>
-        <target state="translated">ｺﾝﾆﾁﾊ世界!</target>
+        <target state="translated">こんにちは世界！</target>
         <context-group name="po-reference" purpose="location">
           <context context-type="sourcefile">hello.c</context>
           <context context-type="linenumber">9</context>
@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit xml:space="preserve" id="3">
         <source>Lorem Ipsum</source>
-        <target state="translated">ﾛｰﾚﾑｲﾌﾟｻﾑ</target>
+        <target state="translated">Lorem Ipsum</target>
         <context-group name="po-reference" purpose="location">
           <context context-type="sourcefile">hello.c</context>
           <context context-type="linenumber">10</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit xml:space="preserve" id="4">
         <source>Oops! an unexpected error has occurred!</source>
-        <target state="translated">おっと！予期せぬエラーが発生しました。</target>
+        <target state="translated">おっと！予期しないエラーが発生しました！</target>
         <context-group name="po-reference" purpose="location">
           <context context-type="sourcefile">hello.c</context>
           <context context-type="linenumber">11</context>

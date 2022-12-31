@@ -4,7 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { TextlintKernel } from "@textlint/kernel";
 import { describe, expect, test } from "@jest/globals";
-import NoHankakuKana from "textlint-rule-no-hankaku-kana";
+import NoExclamationQuestionMark from "textlint-rule-no-exclamation-question-mark";
 import XliffPlugin from "../main";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -26,8 +26,8 @@ function lintText(text: string, filePath = "") {
       },
     ],
     rules: [{
-      ruleId: "no-hankaku-kana",
-      rule: NoHankakuKana,
+      ruleId: "no-exclamation-question-mark",
+      rule: NoExclamationQuestionMark,
     }],
   };
 
@@ -46,7 +46,7 @@ describe("XliffPlugin", () => {
 
   describe("If there is no file path", () => {
     test("textlint reports errors", async () => {
-      const results = await lintText("<target>ﾛｰﾚﾑｲﾌﾟｻﾑ</target>");
+      const results = await lintText("<target>こんにちは世界！</target>");
       expect(results.messages.length).toBeGreaterThan(0);
       expect(results.filePath).toBe("<xml>");
     });

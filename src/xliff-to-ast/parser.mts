@@ -41,6 +41,7 @@ export async function parse(text: string): Promise<TxtParentNode> {
 const SyntaxMap: Record<string, string> = {
   root: ASTNodeTypes.Document,
   body: ASTNodeTypes.Paragraph,
+  source: ASTNodeTypes.Code,
   target: ASTNodeTypes.Paragraph,
   text: ASTNodeTypes.Str,
 };
