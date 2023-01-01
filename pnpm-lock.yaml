@@ -15,6 +15,7 @@ specifiers:
   npm-run-all: ^4.1.5
   rimraf: ^3.0.2
   simple-git-hooks: ^2.8.1
+  textlint-filter-rule-node-types: ^1.1.0
   textlint-rule-no-exclamation-question-mark: ^1.1.0
   ts-jest: ^29.0.3
   ts-jest-resolver: ^2.0.0
@@ -27,6 +28,7 @@ specifiers:
 
 dependencies:
   '@textlint/ast-node-types': 12.3.0
+  textlint-filter-rule-node-types: 1.1.0
   unist-util-map: 3.1.2
   vfile-location: 4.0.1
   xast-util-from-xml: 2.0.1
@@ -704,6 +706,10 @@ packages:
 
   /@textlint/ast-node-types/12.3.0:
     resolution: {integrity: sha512-ke5hlKy/xZ/vQt6j+h4k9GradJPDsV3FKsUqWpCpF/X8qWCU2zM4e1SMUAFjoUcLuF9in+eXIQ71Qm/AdjjkZQ==}
+
+  /@textlint/ast-node-types/4.4.3:
+    resolution: {integrity: sha512-qi2jjgO6Tn3KNPGnm6B7p6QTEPvY95NFsIAaJuwbulur8iJUEenp1OnoUfiDaC/g2WPPEFkcfXpmnu8XEMFo2A==}
+    dev: false
 
   /@textlint/ast-tester/12.3.0:
     resolution: {integrity: sha512-f135pLEv/6epjRNlSTpxHX/3lutzB+l1GCHjVlm+PRCWEunKBvcZxyBCf1mp00vKNQdOpLnSPFDHIa/KgsZ/nQ==}
@@ -3330,6 +3336,12 @@ packages:
       glob: 7.2.3
       minimatch: 3.1.2
     dev: true
+
+  /textlint-filter-rule-node-types/1.1.0:
+    resolution: {integrity: sha512-KDJr7Fur/Gg8soghL7BXqd5D21EDV5YbN6rTSvvnh5RW8PSFXhCISBMyGFaUKPaPkGlxmwdplwvYuHZNRRy8wQ==}
+    dependencies:
+      '@textlint/ast-node-types': 4.4.3
+    dev: false
 
   /textlint-rule-helper/2.2.3_@textlint+types@12.3.0:
     resolution: {integrity: sha512-H499NRHVurHTFXTL+w/FI+aX6YgZD1TAFuR6kHqYDQ2ArGwkCbnRu+so+deweTFEUI4etP7EVMsrLwXP1e2Q+w==}

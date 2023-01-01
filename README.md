@@ -22,8 +22,22 @@ Please use the pre-built archive from the release.
 
 ## Usage
 
+The textlint specification does not allow you to determine which elements the parser will exclude.
+
+A `<source>` tag is recognized as a `CodeBlock`. Please filter out.
+
 ```json
 {
+  "filters": {
+    "node-types": {
+      "nodeTypes": [
+        "CodeBlock"
+      ]
+    }
+  },
+  "rules": {
+    // Example rules
+  },
   "plugins": {
     "xliff": true
   }
