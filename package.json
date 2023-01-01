@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "@textlint/ast-node-types": "^12.3.0",
+    "textlint-filter-rule-node-types": "^1.1.0",
     "unist-util-map": "^3.1.2",
     "vfile-location": "^4.0.1",
     "xast-util-from-xml": "^2.0.1",
