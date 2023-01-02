@@ -12,7 +12,7 @@
     "url": "https://github.com/err931/textlint-plugin-xliff/issues"
   },
   "license": "MIT",
-  "author": "Minoru Maekawa (https://github.com/err931)",
+  "author": "Minoru Maekawa <119707793+err931@users.noreply.github.com>",
   "files": [
     "dist"
   ],
@@ -58,7 +58,6 @@
     "ts-node": "^10.9.1",
     "typescript": "^4.9.4"
   },
-  "private": "true",
   "lint-staged": {
     "*.ts": "deno fmt"
   },
