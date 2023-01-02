@@ -27,6 +27,7 @@
     "build": "npm-run-all -p clean tsc",
     "clean": "rimraf dist",
     "prepare": "simple-git-hooks",
+    "prepublishOnly": "npm run build",
     "test": "env-cmd jest",
     "tsc": "tsc -p ./tsconfig.build.json"
   },
