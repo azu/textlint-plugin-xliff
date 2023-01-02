@@ -1,4 +1,4 @@
-# textlint-plugin-xliff
+# textlint-plugin-xliff [![Node.js CI](https://github.com/err931/textlint-plugin-xliff/actions/workflows/build-test.yml/badge.svg)](https://github.com/err931/textlint-plugin-xliff/actions/workflows/build-test.yml)
 
 XLIFF support for [textlint](https://github.com/textlint/textlint "textlint").
 
@@ -16,9 +16,11 @@ XLIFF support for [textlint](https://github.com/textlint/textlint "textlint").
 
 ## Installation
 
-**There are currently no plans to release it in npm registry.**
+Published on [npm](https://www.npmjs.com/package/textlint-plugin-xliff).
 
-Please use the pre-built archive from the release.
+```bash
+npm i textlint-plugin-xliff
+```
 
 ## Usage
 
