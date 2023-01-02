@@ -1,5 +1,6 @@
 // This file is based on textlint-plugin-markdown (Author: azu)
 import type { TextlintPluginOptions } from "@textlint/types";
+import { parse } from "./xliff-to-ast/parser.js";
 
 export class XLIFFProcessor {
   config: TextlintPluginOptions;
@@ -14,8 +15,7 @@ export class XLIFFProcessor {
 
   processor(_ext: string) {
     return {
-      async preProcess(text: string, _filePath?: string) {
-        const { parse } = await import("./xliff-to-ast/parser.mjs");
+      preProcess(text: string, _filePath?: string) {
         return parse(text);
       },
       postProcess(messages: string[], filePath?: string) {

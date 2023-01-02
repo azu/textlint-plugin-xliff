@@ -1,13 +1,12 @@
 import type { TextNodeRange, TxtNode, TxtNodeLineLocation, TxtParentNode } from "@textlint/ast-node-types";
 import { ASTNodeTypes } from "@textlint/ast-node-types";
 import type { Position } from "unist";
+import { map } from "unist-util-map";
+import { fromXml } from "xast-util-from-xml";
+import { toXml } from "xast-util-to-xml";
+import { location } from "vfile-location";
 
-export async function parse(text: string): Promise<TxtParentNode> {
-  const { map } = await import("unist-util-map");
-  const { fromXml } = await import("xast-util-from-xml");
-  const { toXml } = await import("xast-util-to-xml");
-  const { location } = await import("vfile-location");
-
+export function parse(text: string): TxtParentNode {
   const tree = fromXml(text);
 
   // @ts-expect-error: Suppresses the error as it does not return the expected type information.

@@ -16,8 +16,8 @@
   "files": [
     "dist"
   ],
-  "main": "dist/main.js",
   "exports": "./dist/main.js",
+  "type": "module",
   "types": "./dist/main.d.ts",
   "repository": {
     "type": "git",
@@ -42,7 +42,7 @@
     "@jest/globals": "^29.3.1",
     "@textlint/kernel": "^12.3.0",
     "@textlint/types": "^12.3.0",
-    "@tsconfig/node-lts-strictest": "^18.12.1",
+    "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/jest": "^29.2.5",
     "@types/node": "^18.11.18",
     "@types/unist": "^2.0.6",
