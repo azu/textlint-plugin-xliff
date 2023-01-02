@@ -1,5 +1,5 @@
 {
-  "name": "textlint-plugin-xliff",
+  "name": "@err931/textlint-plugin-xliff",
   "version": "0.0.0",
   "description": "XLIFF support for textlint.",
   "keywords": [
