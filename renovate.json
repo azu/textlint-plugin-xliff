@@ -1,0 +1,18 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "automerge": true,
+  "pinVersions": false,
+  "major": {
+    "automerge": false
+  },
+  "devDependencies": {
+    "automerge": true,
+    "pinVersions": true
+  },
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 5
+}
