@@ -6,7 +6,7 @@ specifiers:
   '@textlint/kernel': 12.5.0
   '@textlint/types': 12.5.0
   '@tsconfig/node-lts-strictest': 18.12.1
-  '@types/jest': 29.2.5
+  '@types/jest': 29.2.6
   '@types/node': 18.11.18
   '@types/unist': 2.0.6
   env-cmd: 10.1.0
@@ -39,7 +39,7 @@ devDependencies:
   '@textlint/kernel': 12.5.0
   '@textlint/types': 12.5.0
   '@tsconfig/node-lts-strictest': 18.12.1
-  '@types/jest': 29.2.5
+  '@types/jest': 29.2.6
   '@types/node': 18.11.18
   '@types/unist': 2.0.6
   env-cmd: 10.1.0
@@ -848,8 +848,8 @@ packages:
       '@types/istanbul-lib-report': 3.0.0
     dev: true
 
-  /@types/jest/29.2.5:
-    resolution: {integrity: sha512-H2cSxkKgVmqNHXP7TC2L/WUorrZu8ZigyRywfVzv6EyBlxj39n4C00hjXYQWsbwqgElaj/CiAeSRmk5GoaKTgw==}
+  /@types/jest/29.2.6:
+    resolution: {integrity: sha512-XEUC/Tgw3uMh6Ho8GkUtQ2lPhY5Fmgyp3TdlkTJs1W9VgNxs+Ow/x3Elh8lHQKqCbZL0AubQuqWjHVT033Hhrw==}
     dependencies:
       expect: 29.3.1
       pretty-format: 29.3.1
