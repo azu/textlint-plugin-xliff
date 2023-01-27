@@ -42,7 +42,7 @@
   "devDependencies": {
     "@jest/globals": "29.4.1",
     "@textlint/kernel": "12.6.1",
-    "@textlint/types": "12.6.1",
+    "@textlint/types": "13.0.0",
     "@tsconfig/node-lts-strictest": "18.12.1",
     "@types/jest": "29.4.0",
     "@types/node": "18.11.18",
