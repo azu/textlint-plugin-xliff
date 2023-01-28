@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@jest/globals': 29.4.1
   '@textlint/ast-node-types': ^13.0.0
-  '@textlint/kernel': 13.0.2
+  '@textlint/kernel': 13.0.4
   '@textlint/types': 13.0.2
   '@tsconfig/node-lts-strictest': 18.12.1
   '@types/jest': 29.4.0
@@ -36,7 +36,7 @@ dependencies:
 
 devDependencies:
   '@jest/globals': 29.4.1
-  '@textlint/kernel': 13.0.2
+  '@textlint/kernel': 13.0.4
   '@textlint/types': 13.0.2
   '@tsconfig/node-lts-strictest': 18.12.1
   '@types/jest': 29.4.0
@@ -718,41 +718,45 @@ packages:
   /@textlint/ast-node-types/13.0.2:
     resolution: {integrity: sha512-4l+acQ88z44nLM7uchP25TIc6BFy7W0puI1a4DtBHyk53P2aUXI+JE30GuhzsPUkqwGGcEnTeE3zOA1WNQi5lw==}
 
+  /@textlint/ast-node-types/13.0.4:
+    resolution: {integrity: sha512-6/8reOpc7csrwR8Hd+WqP75QS2akk8U7lzCAUv5cyoGga2KzWlauCC6gy4ZU/Qw8UfSU2ri7ZcX975i6KYLtwQ==}
+    dev: true
+
   /@textlint/ast-node-types/4.4.3:
     resolution: {integrity: sha512-qi2jjgO6Tn3KNPGnm6B7p6QTEPvY95NFsIAaJuwbulur8iJUEenp1OnoUfiDaC/g2WPPEFkcfXpmnu8XEMFo2A==}
     dev: false
 
-  /@textlint/ast-tester/13.0.2:
-    resolution: {integrity: sha512-TUFPPGisFK+Rt4TqeMhXhqoF99B9jzJB/B3PL/YJUZeEKu7Qr9/rIBP1dKX7m1S9TlpnqS49EcD1LWC1COq0gw==}
+  /@textlint/ast-tester/13.0.4:
+    resolution: {integrity: sha512-i/7bNipeeWsUqpYCxwxXXUmbiUBNJCZrVSVsZgFo1llJPa/uivyRy64Wgxy725GoWr3GdhAAGI3e7gtjGrZXjg==}
     dependencies:
-      '@textlint/ast-node-types': 13.0.2
+      '@textlint/ast-node-types': 13.0.4
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /@textlint/ast-traverse/13.0.2:
-    resolution: {integrity: sha512-OBbJABVy/hIc/lwG7AiharRRFFJ15fyoUbVj3QjGeaaWtIJQdPxgq9Dm8B/QUC6wtfxMprttijWHdIMfEhzcVg==}
+  /@textlint/ast-traverse/13.0.4:
+    resolution: {integrity: sha512-wK1HWrONMfJBhFby9Dpu2tEj0j1JRBlk1fVxLljBzmrV31v1nMI7Q9+ZMqGAZIZD7kDMUpHvGg7OsA6KjHiLcA==}
     dependencies:
-      '@textlint/ast-node-types': 13.0.2
+      '@textlint/ast-node-types': 13.0.4
     dev: true
 
-  /@textlint/feature-flag/13.0.2:
-    resolution: {integrity: sha512-u00NZZe2upKYHzwApNNW3qYPemlPj6/ffkTdxJIHd6KD43YhmokcVc4VQYgeCE2ulIPuRLus+imeB0JJlQBfpw==}
+  /@textlint/feature-flag/13.0.4:
+    resolution: {integrity: sha512-mo4AaRrSbOgYhf6p+LSwo+UbMr62dsq12vMVqEkjHZ5tm5vrWbQkC2YrtMAM0ot9AY1x6RJFJ5ZO3Qn42N0JTQ==}
     dev: true
 
-  /@textlint/kernel/13.0.2:
-    resolution: {integrity: sha512-djv4FHhbA1qbcHybMbzEw7k9cVN5staIPkGCmivPlWb8Lm0J1xKl87YSLZejNb6aBNJB8NALfrUO7sIE79R1aQ==}
+  /@textlint/kernel/13.0.4:
+    resolution: {integrity: sha512-lfZC2690xX7x5ZJn8kKfyx1/cD815+o5X80hbIjmhuY8pdoJgP4nqemaI/Y3Y+re/zg3YgT1PTayA6vcuxOw3g==}
     dependencies:
-      '@textlint/ast-node-types': 13.0.2
-      '@textlint/ast-tester': 13.0.2
-      '@textlint/ast-traverse': 13.0.2
-      '@textlint/feature-flag': 13.0.2
-      '@textlint/source-code-fixer': 13.0.2
-      '@textlint/types': 13.0.2
-      '@textlint/utils': 13.0.2
+      '@textlint/ast-node-types': 13.0.4
+      '@textlint/ast-tester': 13.0.4
+      '@textlint/ast-traverse': 13.0.4
+      '@textlint/feature-flag': 13.0.4
+      '@textlint/source-code-fixer': 13.0.4
+      '@textlint/types': 13.0.4
+      '@textlint/utils': 13.0.4
       debug: 4.3.4
-      deep-equal: 1.1.1
+      fast-equals: 4.0.3
       structured-source: 4.0.0
     transitivePeerDependencies:
       - supports-color
@@ -769,10 +773,10 @@ packages:
       to-regex: 3.0.2
     dev: true
 
-  /@textlint/source-code-fixer/13.0.2:
-    resolution: {integrity: sha512-ay+QdAKn1IA2I7224htQixjgr3ZVfwpIjAwRyfPMevo1711HUUNOBRqaW8IG7eHO4N5ZyTTH9Gx4PJy9BDbQ0g==}
+  /@textlint/source-code-fixer/13.0.4:
+    resolution: {integrity: sha512-C9SYHCQbgB6iJbRNtw+CUMRC7ACIqpLLMRDBw3VXyJfS4Ki9V3YZAlFvhe8kYTjeUe50skOQtDUMgvoIS5nNRA==}
     dependencies:
-      '@textlint/types': 13.0.2
+      '@textlint/types': 13.0.4
       debug: 4.3.4
     transitivePeerDependencies:
       - supports-color
@@ -784,8 +788,14 @@ packages:
       '@textlint/ast-node-types': 13.0.2
     dev: true
 
-  /@textlint/utils/13.0.2:
-    resolution: {integrity: sha512-WJ7JeziBEBgxmANpYecJJ6l7BZ51Lc22oJecymPHWM0vtVX1gTJXPyPRcQRwQVGzyX1oo8sXXNlUHDb14/jEyQ==}
+  /@textlint/types/13.0.4:
+    resolution: {integrity: sha512-ZYnrp+s/MUl1IMvEu92zafLwA8x1vMFaHEZV6BGP3ELf2GZVLZYns2hGYtJse1vb/+/PYH6OCSOTZqfsGwKARg==}
+    dependencies:
+      '@textlint/ast-node-types': 13.0.4
+    dev: true
+
+  /@textlint/utils/13.0.4:
+    resolution: {integrity: sha512-BrSShnYFzCeIYWCTsIIe7GQcFhapQhXq6b3FdZ3CMaAz1apzTKTpukyjfL4Wdiai99XfAWFLko4sld/uWF3/KA==}
     dev: true
 
   /@tsconfig/node-lts-strictest/18.12.1:
@@ -1331,17 +1341,6 @@ packages:
     resolution: {integrity: sha512-Q6fKUPqnAHAyhiUgFU7BUzLiv0kd8saH9al7tnu5Q/okj6dnupxyTgFIBjVzJATdfIAm9NAsvXNzjaKa+bxVyA==}
     dev: true
 
-  /deep-equal/1.1.1:
-    resolution: {integrity: sha512-yd9c5AdiqVcR+JjcwUQb9DkhJc8ngNr0MahEBGvDiJw8puWab2yZlh+nkasOnZP+EGTAP6rRp2JzJhJZzvNF8g==}
-    dependencies:
-      is-arguments: 1.1.1
-      is-date-object: 1.0.5
-      is-regex: 1.1.4
-      object-is: 1.1.5
-      object-keys: 1.1.1
-      regexp.prototype.flags: 1.4.3
-    dev: true
-
   /deepmerge/4.2.2:
     resolution: {integrity: sha512-FJ3UgI4gIl+PHZm53knsuSFpE+nESMr7M4v9QcgB7S63Kj/6WqMiFQJpBBYz1Pt+66bZpP3Q7Lye0Oo9MPKEdg==}
     engines: {node: '>=0.10.0'}
@@ -1545,6 +1544,10 @@ packages:
     dependencies:
       assign-symbols: 1.0.0
       is-extendable: 1.0.1
+    dev: true
+
+  /fast-equals/4.0.3:
+    resolution: {integrity: sha512-G3BSX9cfKttjr+2o1O22tYMLq0DPluZnYtq1rXumE1SpL/F/SLIfHx08WYQoWSIpeMYf8sRbJ8++71+v6Pnxfg==}
     dev: true
 
   /fast-json-stable-stringify/2.1.0:
@@ -1765,14 +1768,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dependencies:
       kind-of: 6.0.3
-    dev: true
-
-  /is-arguments/1.1.1:
-    resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind: 1.0.2
-      has-tostringtag: 1.0.0
     dev: true
 
   /is-arrayish/0.2.1:
@@ -2827,14 +2822,6 @@ packages:
 
   /object-inspect/1.12.2:
     resolution: {integrity: sha512-z+cPxW0QGUp0mcqcsgQyLVRDoXFQbXOwBaqyF7VIgI4TWNQsDHrBpUQslRmIfAoYWdYzs6UlKJtB2XJpTaNSpQ==}
-    dev: true
-
-  /object-is/1.1.5:
-    resolution: {integrity: sha512-3cyDsyHgtmi7I7DfSSI2LDp6SK2lwvtbg0p0R1e0RvTqF5ceGx+K2dfSjm1bKDMVCFEDAQvy+o8c6a7VujOddw==}
-    engines: {node: '>= 0.4'}
-    dependencies:
-      call-bind: 1.0.2
-      define-properties: 1.1.4
     dev: true
 
   /object-keys/1.1.1:
