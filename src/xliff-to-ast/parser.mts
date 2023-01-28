@@ -1,4 +1,4 @@
-import type { TextNodeRange, TxtNode, TxtNodeLineLocation, TxtParentNode } from "@textlint/ast-node-types";
+import type { TxtNode, TxtNodeLocation, TxtNodeRange, TxtParentNode } from "@textlint/ast-node-types";
 import { ASTNodeTypes } from "@textlint/ast-node-types";
 import type { Position } from "unist";
 
@@ -50,7 +50,7 @@ function getNodeType(data: string): string {
   return SyntaxMap[data] || ASTNodeTypes.Html;
 }
 
-function getNodeLineLocation(pos: Position): TxtNodeLineLocation {
+function getNodeLineLocation(pos: Position): TxtNodeLocation {
   const loc = {
     start: {
       line: pos.start.line,
@@ -65,7 +65,7 @@ function getNodeLineLocation(pos: Position): TxtNodeLineLocation {
   return loc;
 }
 
-function getTextNodeRange(pos: Position): TextNodeRange {
+function getTextNodeRange(pos: Position): TxtNodeRange {
   const startOffset = Number(pos.start.offset);
   const endOffset = Number(pos.end.offset);
 
